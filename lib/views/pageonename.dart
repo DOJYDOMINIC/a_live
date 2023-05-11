@@ -90,9 +90,6 @@ class PageOne extends StatelessWidget {
               ),
             ),
             // DropDown(),
-            ElevatedButton(onPressed: (){
-              Navigator.push(context, MaterialPageRoute(builder: (context) => UpdateUserScreen(),));
-            }, child: Text('pagetwo')),
             // ElevatedButton(onPressed: (){
             //   Navigator.push(context, MaterialPageRoute(builder: (context) => DataDisplayPage(),));
             // }, child: Text('pagetwo'))

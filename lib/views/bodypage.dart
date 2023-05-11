@@ -1,4 +1,5 @@
 import 'package:a_live/control/controllar.dart';
+import 'package:a_live/views/updatepage.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -12,6 +13,13 @@ class BodyPage extends StatelessWidget {
   Widget build(BuildContext context) {
     var provider = Provider.of<ProviderOne>(context);
     return Scaffold(
+      appBar: AppBar(
+        actions: [
+          IconButton(onPressed: (){
+            Navigator.push(context, MaterialPageRoute(builder: (context) => UpdateUserScreen(),));
+          }, icon: Icon(Icons.browser_updated_sharp))
+        ],
+      ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
